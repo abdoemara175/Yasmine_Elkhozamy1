@@ -531,7 +531,7 @@
           </a>
 
           <!-- Email Card -->
-          <a href="mailto:yasssmmminnnm@gmail.com" class="contact-card spotlight-card" title="Send Direct Email">
+          <div class="contact-card spotlight-card" onclick="copyToClipboard('yasssmmminnnm@gmail.com', 'Email Address')" title="Click to copy email">
             <div class="contact-icon email">
               <svg class="gmail-svg-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.279 24 3.434 24 5.457z"/>
@@ -541,10 +541,10 @@
               <span class="contact-label">Email (Gmail)</span>
               <span class="contact-value">yasssmmminnnm@gmail.com</span>
             </div>
-            <div class="external-icon">
-              <i class="fas fa-arrow-up-right-from-square"></i>
-            </div>
-          </a>
+            <button class="copy-btn" aria-label="Copy Email" title="Copy Email">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
 
           <!-- LinkedIn Card -->
           <a href="https://linkedin.com" target="_blank" class="contact-card spotlight-card" title="View LinkedIn Profile">
@@ -561,7 +561,7 @@
           </a>
 
           <!-- Phone Card -->
-          <a href="tel:01221741380" class="contact-card spotlight-card" title="Call directly">
+          <div class="contact-card spotlight-card" onclick="copyToClipboard('01221741380', 'Phone Number')" title="Click to copy phone number">
             <div class="contact-icon phone">
               <i class="fas fa-phone-alt"></i>
             </div>
@@ -569,10 +569,10 @@
               <span class="contact-label">Phone</span>
               <span class="contact-value">01221741380</span>
             </div>
-            <div class="external-icon">
-              <i class="fas fa-arrow-up-right-from-square"></i>
-            </div>
-          </a>
+            <button class="copy-btn" aria-label="Copy Phone Number" title="Copy Phone Number">
+              <i class="far fa-copy"></i>
+            </button>
+          </div>
 
           <!-- WhatsApp Card -->
           <a href="https://wa.me/201221741380" target="_blank" rel="noopener noreferrer" class="contact-card spotlight-card whatsapp-card" title="Chat on WhatsApp">
