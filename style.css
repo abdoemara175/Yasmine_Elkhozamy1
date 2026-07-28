@@ -1979,9 +1979,16 @@ body.light-mode .back-to-top:hover { color: #ffffff; }
   pointer-events: auto;
 }
 
-/* ---------- 16. RESPONSIVE BREAKPOINTS ---------- */
+/* ---------- 16. RESPONSIVE BREAKPOINTS & FLUID TYPOGRAPHY ---------- */
+.hero-name {
+  font-size: clamp(2.2rem, 6vw + 1rem, 4.2rem);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw + 0.8rem, 3rem);
+}
+
 @media (max-width: 992px) {
-  .hero-name { font-size: 3rem; }
   .about-grid { grid-template-columns: 1fr; }
   .nav-sections { display: none; }
   .mobile-menu-btn { display: flex; }
@@ -1998,15 +2005,32 @@ body.light-mode .back-to-top:hover { color: #ffffff; }
     padding: 1.5rem;
     border-bottom: 1px solid var(--border-subtle);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    gap: 0.8rem;
+  }
+  
+  .nav-link {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 }
 
 @media (max-width: 650px) {
-  .hero-name { font-size: 2.2rem; }
-  .section-title { font-size: 2rem; }
   .hero-actions { flex-direction: column; width: 100%; }
   .btn { width: 100%; justify-content: center; }
   .about-stats-grid { grid-template-columns: 1fr; }
   .contact-cards-grid { grid-template-columns: 1fr; }
+  .contact-card { grid-column: span 1 !important; }
   .form-row { grid-template-columns: 1fr; }
+  .quick-message-card { padding: 1.5rem; }
+  
+  .toast-notification {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    justify-content: center;
+    text-align: center;
+  }
 }
