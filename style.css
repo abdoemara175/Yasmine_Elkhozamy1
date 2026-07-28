@@ -1472,12 +1472,13 @@ body.light-mode .timeline-badge {
 
 .contact-cards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
 .contact-card {
+  grid-column: span 3;
   padding: 1.8rem 2rem;
   text-decoration: none;
   color: inherit;
@@ -1485,6 +1486,54 @@ body.light-mode .timeline-badge {
   align-items: center;
   gap: 1.25rem;
   cursor: pointer;
+}
+
+@media (min-width: 993px) {
+  .contact-card:nth-child(1),
+  .contact-card:nth-child(2),
+  .contact-card:nth-child(3) {
+    grid-column: span 2;
+  }
+  .contact-card:nth-child(4),
+  .contact-card:nth-child(5) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-card {
+    grid-column: span 6 !important;
+  }
+}
+
+/* WhatsApp Styling */
+.contact-icon.whatsapp {
+  background: rgba(37, 211, 102, 0.12);
+  color: #25D366;
+  border: 1px solid rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-card:hover {
+  border-color: #25D366 !important;
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.28), 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.whatsapp-card:hover .contact-icon.whatsapp {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.external-icon.whatsapp-action {
+  color: #25D366;
+  background: rgba(37, 211, 102, 0.1);
+  border-color: rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-card:hover .external-icon.whatsapp-action {
+  background: #25D366;
+  color: #ffffff;
+  border-color: #25D366;
+  transform: scale(1.1);
 }
 
 .contact-icon.phone i,
