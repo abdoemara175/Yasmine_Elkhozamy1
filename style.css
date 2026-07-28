@@ -1472,13 +1472,13 @@ body.light-mode .timeline-badge {
 
 .contact-cards-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
 .contact-card {
-  grid-column: span 3;
+  grid-column: span 1;
   padding: 1.8rem 2rem;
   text-decoration: none;
   color: inherit;
@@ -1488,21 +1488,14 @@ body.light-mode .timeline-badge {
   cursor: pointer;
 }
 
-@media (min-width: 993px) {
-  .contact-card:nth-child(1),
-  .contact-card:nth-child(2),
-  .contact-card:nth-child(3) {
-    grid-column: span 2;
-  }
-  .contact-card:nth-child(4),
-  .contact-card:nth-child(5) {
-    grid-column: span 3;
-  }
+/* Card 1 (Email) spans full width across top row - Zero Empty Gaps */
+.contact-card:nth-child(1) {
+  grid-column: span 2;
 }
 
 @media (max-width: 650px) {
   .contact-card {
-    grid-column: span 6 !important;
+    grid-column: span 2 !important;
   }
 }
 
