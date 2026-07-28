@@ -1726,7 +1726,6 @@ body.light-mode .contact-card:hover .contact-icon { color: #ffffff; }
 }
 
 .copy-btn, .external-icon {
-  margin-left: auto;
   background: rgba(255, 200, 87, 0.08);
   border: 1px solid var(--border-subtle);
   min-width: 44px;
@@ -1740,6 +1739,15 @@ body.light-mode .contact-card:hover .contact-icon { color: #ffffff; }
   justify-content: center;
   flex-shrink: 0;
   transition: var(--transition-normal);
+  text-decoration: none;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 body.light-mode .copy-btn, 

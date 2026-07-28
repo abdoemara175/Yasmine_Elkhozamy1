@@ -561,7 +561,7 @@
           </a>
 
           <!-- Phone Card -->
-          <a href="tel:01221741380" class="contact-card spotlight-card" title="Click to call">
+          <div class="contact-card spotlight-card" onclick="copyToClipboard('01221741380', 'Phone Number')" title="Click to copy phone number">
             <div class="contact-icon phone">
               <i class="fas fa-phone-alt"></i>
             </div>
@@ -569,13 +569,18 @@
               <span class="contact-label">Phone</span>
               <span class="contact-value">01221741380</span>
             </div>
-            <div class="external-icon phone-action">
-              <i class="fas fa-phone-alt"></i>
+            <div class="card-actions">
+              <a href="tel:01221741380" onclick="event.stopPropagation()" class="external-icon phone-action" title="Call directly">
+                <i class="fas fa-phone-alt"></i>
+              </a>
+              <button class="copy-btn" onclick="event.stopPropagation(); copyToClipboard('01221741380', 'Phone Number')" aria-label="Copy Phone Number" title="Copy Phone Number">
+                <i class="far fa-copy"></i>
+              </button>
             </div>
-          </a>
+          </div>
 
           <!-- WhatsApp Card -->
-          <a href="https://wa.me/201221741380" target="_blank" rel="noopener noreferrer" class="contact-card spotlight-card whatsapp-card" title="Click to chat on WhatsApp">
+          <div class="contact-card spotlight-card whatsapp-card" onclick="copyToClipboard('+201221741380', 'WhatsApp Number')" title="Click to copy WhatsApp number">
             <div class="contact-icon whatsapp">
               <i class="fab fa-whatsapp"></i>
             </div>
@@ -583,10 +588,15 @@
               <span class="contact-label">WhatsApp</span>
               <span class="contact-value">+20 122 174 1380</span>
             </div>
-            <div class="external-icon whatsapp-action">
-              <i class="fab fa-whatsapp"></i>
+            <div class="card-actions">
+              <a href="https://wa.me/201221741380" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="external-icon whatsapp-action" title="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <button class="copy-btn" onclick="event.stopPropagation(); copyToClipboard('+201221741380', 'WhatsApp Number')" aria-label="Copy WhatsApp Number" title="Copy WhatsApp Number">
+                <i class="far fa-copy"></i>
+              </button>
             </div>
-          </a>
+          </div>
 
         </div>
 
