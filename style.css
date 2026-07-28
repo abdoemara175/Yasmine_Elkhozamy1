@@ -1529,6 +1529,130 @@ body.light-mode .timeline-badge {
   transform: scale(1.1);
 }
 
+/* GitHub Brand Card Styling */
+.github-featured-card .contact-icon.github {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.light-mode .github-featured-card .contact-icon.github {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.2);
+}
+
+.github-featured-card:hover {
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 12px 35px rgba(255, 255, 255, 0.15), 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+body.light-mode .github-featured-card:hover {
+  border-color: #0f172a !important;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.18) !important;
+}
+
+.github-featured-card:hover .contact-icon.github {
+  background: #ffffff;
+  color: #0a0a0c;
+}
+
+body.light-mode .github-featured-card:hover .contact-icon.github {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.github-featured-card:hover .external-icon {
+  background: #ffffff;
+  color: #0a0a0c;
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+body.light-mode .github-featured-card:hover .external-icon {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+/* Email (Gmail Red) Brand Card */
+.contact-icon.email {
+  background: rgba(234, 67, 53, 0.12);
+  color: #ea4335;
+  border: 1px solid rgba(234, 67, 53, 0.28);
+}
+
+.contact-card:has(.contact-icon.email):hover {
+  border-color: #ea4335 !important;
+  box-shadow: 0 12px 35px rgba(234, 67, 53, 0.26), 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.contact-card:has(.contact-icon.email):hover .contact-icon.email {
+  background: #ea4335;
+  color: #ffffff;
+}
+
+.contact-card:has(.contact-icon.email):hover .copy-btn {
+  background: #ea4335;
+  color: #ffffff;
+  border-color: #ea4335;
+  transform: scale(1.1);
+}
+
+/* LinkedIn (Corporate Blue) Brand Card */
+.contact-icon.linkedin {
+  background: rgba(10, 102, 194, 0.14);
+  color: #0a66c2;
+  border: 1px solid rgba(10, 102, 194, 0.3);
+}
+
+.contact-card:has(.contact-icon.linkedin):hover {
+  border-color: #0a66c2 !important;
+  box-shadow: 0 12px 35px rgba(10, 102, 194, 0.28), 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.contact-card:has(.contact-icon.linkedin):hover .contact-icon.linkedin {
+  background: #0a66c2;
+  color: #ffffff;
+}
+
+.contact-card:has(.contact-icon.linkedin):hover .external-icon {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: #0a66c2;
+  transform: scale(1.1);
+}
+
+/* Phone (Call Green) Brand Card */
+.contact-icon.phone {
+  background: rgba(52, 168, 83, 0.12);
+  color: #34a853;
+  border: 1px solid rgba(52, 168, 83, 0.28);
+}
+
+.contact-card:has(.contact-icon.phone):hover {
+  border-color: #34a853 !important;
+  box-shadow: 0 12px 35px rgba(52, 168, 83, 0.26), 0 4px 20px rgba(0, 0, 0, 0.25) !important;
+}
+
+.contact-card:has(.contact-icon.phone):hover .contact-icon.phone {
+  background: #34a853;
+  color: #ffffff;
+}
+
+.external-icon.phone-action {
+  color: #34a853;
+  background: rgba(52, 168, 83, 0.1);
+  border-color: rgba(52, 168, 83, 0.2);
+}
+
+.contact-card:has(.contact-icon.phone):hover .external-icon.phone-action {
+  background: #34a853;
+  color: #ffffff;
+  border-color: #34a853;
+  transform: scale(1.1);
+}
+
 .contact-icon.phone i,
 .external-icon.phone-action i,
 .external-icon .fa-phone,
