@@ -1709,19 +1709,9 @@ body.light-mode .external-icon.phone-action {
   transition: transform 0.3s var(--ease-spring), background 0.3s ease;
 }
 
-body.light-mode .contact-icon {
-  background: rgba(59, 130, 246, 0.08);
-  color: var(--gold-primary);
-  border-color: rgba(59, 130, 246, 0.2);
-}
-
 .contact-card:hover .contact-icon {
   transform: scale(1.1) rotate(5deg);
-  background: var(--gold-gradient);
-  color: #0a0a0c;
 }
-
-body.light-mode .contact-card:hover .contact-icon { color: #ffffff; }
 
 .contact-info {
   display: flex;
