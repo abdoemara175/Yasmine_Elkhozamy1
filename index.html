@@ -569,18 +569,13 @@
               <span class="contact-label">Phone</span>
               <span class="contact-value">01221741380</span>
             </div>
-            <div class="card-actions">
-              <a href="tel:01221741380" onclick="event.stopPropagation()" class="external-icon phone-action" title="Call directly">
-                <i class="fas fa-phone-alt"></i>
-              </a>
-              <button class="copy-btn" onclick="event.stopPropagation(); copyToClipboard('01221741380', 'Phone Number')" aria-label="Copy Phone Number" title="Copy Phone Number">
-                <i class="far fa-copy"></i>
-              </button>
-            </div>
+            <button class="copy-btn" aria-label="Copy Phone Number" title="Copy Phone Number">
+              <i class="far fa-copy"></i>
+            </button>
           </div>
 
           <!-- WhatsApp Card -->
-          <div class="contact-card spotlight-card whatsapp-card" onclick="copyToClipboard('+201221741380', 'WhatsApp Number')" title="Click to copy WhatsApp number">
+          <a href="https://wa.me/201221741380" target="_blank" rel="noopener noreferrer" class="contact-card spotlight-card whatsapp-card" title="Click to chat on WhatsApp">
             <div class="contact-icon whatsapp">
               <i class="fab fa-whatsapp"></i>
             </div>
@@ -588,15 +583,10 @@
               <span class="contact-label">WhatsApp</span>
               <span class="contact-value">+20 122 174 1380</span>
             </div>
-            <div class="card-actions">
-              <a href="https://wa.me/201221741380" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="external-icon whatsapp-action" title="Chat on WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-              <button class="copy-btn" onclick="event.stopPropagation(); copyToClipboard('+201221741380', 'WhatsApp Number')" aria-label="Copy WhatsApp Number" title="Copy WhatsApp Number">
-                <i class="far fa-copy"></i>
-              </button>
+            <div class="external-icon whatsapp-action">
+              <i class="fas fa-arrow-up-right-from-square"></i>
             </div>
-          </div>
+          </a>
 
         </div>
 
